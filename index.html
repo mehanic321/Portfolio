@@ -47,9 +47,9 @@
                 <ul class="navbar-nav gap-3">
                     <li class="nav-item"><a class="nav-link" href="#home">Главная</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">Экспертиза</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#journey">Карьера</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Стек & CMS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Кейсы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#workflow">Процесс</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Нанять</a></li>
                 </ul>
                 <div class="d-flex ms-lg-4 gap-3 social-icons mt-3 mt-lg-0 align-items-center">
@@ -448,6 +448,46 @@
         </div>
     </section>
 
+    <!-- Services Section (New) -->
+    <section id="services" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold text-white mb-3">Что я предлагаю</h2>
+                <p class="text-gray-400">Комплексные решения для вашего бизнеса.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card p-4 h-100 hover-lift">
+                        <i class="bi bi-box-seam text-primary fs-2 mb-3 d-block"></i>
+                        <h5 class="text-white fw-bold">Разработка под ключ</h5>
+                        <p class="text-gray-400 small">Создание интернет-магазинов и порталов с нуля. От установки движка до настройки сервера и релиза.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card p-4 h-100 hover-lift">
+                        <i class="bi bi-speedometer2 text-danger fs-2 mb-3 d-block"></i>
+                        <h5 class="text-white fw-bold">Оптимизация Скорости</h5>
+                        <p class="text-gray-400 small">Вывод в зеленую зону Google PageSpeed. Настройка Redis, оптимизация картинок и скриптов.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="glass-card p-4 h-100 hover-lift">
+                        <i class="bi bi-plug text-warning fs-2 mb-3 d-block"></i>
+                        <h5 class="text-white fw-bold">API Интеграции</h5>
+                        <p class="text-gray-400 small">Синхронизация с 1С, МойСклад, CRM, службами доставки (CDEK, Почта) и платежными шлюзами.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="glass-card p-4 h-100 hover-lift">
+                        <i class="bi bi-bandaid text-success fs-2 mb-3 d-block"></i>
+                        <h5 class="text-white fw-bold">Аудит и Лечение</h5>
+                        <p class="text-gray-400 small">Поиск узких мест, рефакторинг легаси кода, удаление вирусов и настройка защиты (WAF).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="py-5">
         <div class="container py-5">
@@ -517,6 +557,47 @@
                                 <i class="bi bi-eye me-2"></i> Детали и Интеграции
                             </button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section (New) -->
+    <section id="workflow" class="py-5 bg-glass border-top border-bottom border-white border-opacity-10">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold text-white mb-3">Как я работаю</h2>
+                <p class="text-gray-400">Прозрачный процесс от ТЗ до запуска.</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center text-center position-relative workflow-container">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="workflow-step">
+                        <div class="icon-circle mx-auto mb-3 bg-primary bg-opacity-25 text-white fs-4 border border-primary">1</div>
+                        <h5 class="text-white fw-bold">Анализ</h5>
+                        <p class="text-gray-400 small">Изучаю задачу, составляю тех. задание и подбираю архитектуру.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="workflow-step">
+                        <div class="icon-circle mx-auto mb-3 bg-primary bg-opacity-25 text-white fs-4 border border-primary">2</div>
+                        <h5 class="text-white fw-bold">Разработка</h5>
+                        <p class="text-gray-400 small">Git Flow. Работа на dev-сервере. Регулярные коммиты и отчеты.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="workflow-step">
+                        <div class="icon-circle mx-auto mb-3 bg-primary bg-opacity-25 text-white fs-4 border border-primary">3</div>
+                        <h5 class="text-white fw-bold">QA и Тесты</h5>
+                        <p class="text-gray-400 small">Проверка нагрузки, кроссбраузерности и безопасности перед релизом.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="workflow-step">
+                        <div class="icon-circle mx-auto mb-3 bg-primary bg-opacity-25 text-white fs-4 border border-primary">4</div>
+                        <h5 class="text-white fw-bold">Релиз & Саппорт</h5>
+                        <p class="text-gray-400 small">Деплой на прод без простоя. Гарантийная поддержка 1 месяц.</p>
                     </div>
                 </div>
             </div>
@@ -623,6 +704,59 @@
                         <div class="icon-circle mx-auto mb-3 bg-warning bg-opacity-10 text-warning"><i class="bi bi-music-note-beamed"></i></div>
                         <h4 class="text-white h5">Креативность</h4>
                         <p class="text-gray-400 small">Пишу электронную музыку. Понимаю структуру, ритм и "flow", что помогает создавать логичный и плавный код.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (New) -->
+    <section id="faq" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold text-white mb-3">Частые вопросы</h2>
+                <p class="text-gray-400">Снимаю головную боль заказчиков заранее.</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item glass-panel mb-3 border-0 rounded-3 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Работаете с NDA?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-gray-400">
+                                    Да, конечно. Я уважаю конфиденциальность и готов подписать NDA перед началом работ. Весь код передается в ваш репозиторий.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item glass-panel mb-3 border-0 rounded-3 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Есть ли гарантия на код?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-gray-400">
+                                    Да, я даю 1 месяц бесплатной поддержки на исправление любых багов, возникших в моем коде после релиза.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item glass-panel mb-3 border-0 rounded-3 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Делаете ли вы правки после сдачи проекта?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-gray-400">
+                                    Мелкие правки в рамках ТЗ — бесплатно. Дополнительный функционал обсуждается отдельно по почасовой ставке ($25/час).
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

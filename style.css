@@ -412,6 +412,49 @@ body {
     letter-spacing: 1px;
 }
 
+/* --- WORKFLOW --- */
+.workflow-step {
+    position: relative;
+    z-index: 2;
+}
+.workflow-container::before {
+    content: '';
+    position: absolute;
+    top: 40px; /* Aligns with middle of icon circle */
+    left: 15%;
+    right: 15%;
+    height: 2px;
+    background: repeating-linear-gradient(90deg, 
+        rgba(162, 29, 187, 0.3), 
+        rgba(162, 29, 187, 0.3) 10px, 
+        transparent 10px, 
+        transparent 20px
+    );
+    z-index: 1;
+}
+@media (max-width: 768px) {
+    .workflow-container::before {
+        display: none;
+    }
+}
+
+/* --- ACCORDION --- */
+.accordion-button {
+    color: var(--text-main);
+}
+.accordion-button:not(.collapsed) {
+    background-color: rgba(162, 29, 187, 0.1);
+    color: var(--primary-accent);
+    box-shadow: none;
+}
+.accordion-button::after {
+    filter: invert(1);
+}
+.accordion-item {
+    background: transparent;
+}
+
+
 /* Skills Cards */
 .icon-box {
     width: 48px;
