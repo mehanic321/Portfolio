@@ -1,5 +1,5 @@
 {
-  "name": "devportfolio-pro-(bootstrap)",
+  "name": "devportfolio-pro-(cms-specialist)",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@google/genai": "^1.30.0"
+
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
