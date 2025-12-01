@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Dev | Веб-разработчик</title>
+    <title>Alex Dev | CMS Architect & Web Master</title>
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -35,7 +38,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top transition-all">
         <div class="container">
             <a class="navbar-brand fw-bold fs-3" href="#">
-                ALEX<span class="text-primary-accent">.DEV</span>
+                ALEX<span class="text-primary-accent">.CMS</span>
             </a>
             <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i class="bi bi-list fs-1"></i>
@@ -43,12 +46,11 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav gap-3">
                     <li class="nav-item"><a class="nav-link" href="#home">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#journey">Путь</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Стек</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Проекты</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#hobbies">Хобби</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Экспертиза</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#journey">Карьера</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Стек & CMS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Кейсы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Нанять</a></li>
                 </ul>
                 <div class="d-flex ms-lg-4 gap-3 social-icons mt-3 mt-lg-0 align-items-center">
                     <a href="https://github.com" target="_blank" class="social-link"><i class="bi bi-github"></i></a>
@@ -61,17 +63,17 @@
     <!-- Hero Section -->
     <section id="home" class="min-vh-100 d-flex align-items-center position-relative overflow-hidden">
         
-        <!-- WebGL Cube Container (Placeholder for your code) -->
-        <div id="webgl-container" class="webgl-wrapper">
+        <!-- WebGL Cube Container -->
+        <div id="webgl-container" class="webgl-wrapper" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
             <!-- CSS Placeholder Cube -->
             <div class="cube-scene">
                 <div class="cube">
-                    <div class="cube-face cube-face-front"><i class="bi bi-code-slash"></i></div>
-                    <div class="cube-face cube-face-back"><i class="bi bi-braces"></i></div>
-                    <div class="cube-face cube-face-right"><i class="bi bi-terminal"></i></div>
-                    <div class="cube-face cube-face-left"><i class="bi bi-laptop"></i></div>
-                    <div class="cube-face cube-face-top"><i class="bi bi-cpu"></i></div>
-                    <div class="cube-face cube-face-bottom"><i class="bi bi-database"></i></div>
+                    <div class="cube-face cube-face-front"><i class="bi bi-wordpress"></i></div>
+                    <div class="cube-face cube-face-back"><i class="bi bi-cart3"></i></div>
+                    <div class="cube-face cube-face-right"><i class="bi bi-code-square"></i></div>
+                    <div class="cube-face cube-face-left"><i class="bi bi-database"></i></div>
+                    <div class="cube-face cube-face-top"><i class="bi bi-server"></i></div>
+                    <div class="cube-face cube-face-bottom"><i class="bi bi-hdd-network"></i></div>
                 </div>
             </div>
         </div>
@@ -81,30 +83,34 @@
         <div class="blob blob-3"></div>
 
         <div class="container position-relative z-2 text-center">
-            <div class="d-inline-block px-4 py-2 mb-4 rounded-pill glass-badge border border-white border-opacity-10 glow-on-hover">
-                <span class="text-info fw-bold text-uppercase small tracking-wide">✨ Открыт к предложениям</span>
+            <div class="d-inline-block px-4 py-2 mb-4 rounded-pill glass-badge border border-white border-opacity-10 glow-on-hover" data-aos="fade-down">
+                <span class="text-info fw-bold text-uppercase small tracking-wide">
+                    <i class="bi bi-circle-fill text-success me-2" style="font-size: 8px; vertical-align: middle;"></i>
+                    Открыт к предложениям
+                </span>
             </div>
             
-            <h1 class="display-1 fw-bold text-white mb-4 hero-title tracking-tight">
+            <h1 class="display-1 fw-bold text-white mb-4 hero-title tracking-tight" data-aos="fade-up" data-aos-delay="100">
                 Я Middle 
                 <span class="position-relative d-inline-block mx-2">
                     <span class="flicker-text text-primary position-absolute top-50 start-50 translate-middle" style="opacity: 0.3; filter: blur(2px);">Senior</span>
                     <span class="flicker-text text-primary">Senior</span>
                 </span>
                 <br>
-                <span class="gradient-text">Веб-разработчик</span>
+                <span class="gradient-text">CMS Architect</span>
             </h1>
             
-            <p class="lead text-gray-300 mx-auto mb-5 opacity-90" style="max-width: 700px; font-weight: 300;">
-                Создаю надежные сайты и приложения. Фокусируюсь на чистом коде, производительности и реальной пользе для бизнеса.
+            <p class="lead text-gray-300 mx-auto mb-5 opacity-90" style="max-width: 750px; font-weight: 300;" data-aos="fade-up" data-aos-delay="200">
+                Не изобретаю велосипед, а создаю мощные бизнес-инструменты на базе проверенных движков (WordPress, Bitrix, OpenCart).<br>
+                Кастомная разработка плагинов, интеграции API и оптимизация Highload магазинов.
             </p>
             
-            <div class="d-flex flex-column flex-sm-row justify-content-center gap-4">
-                <a href="#projects" class="btn btn-primary-glow rounded-pill px-5 py-3 fw-bold d-flex align-items-center justify-content-center gap-2">
-                    Смотреть работы <i class="bi bi-window-stack fs-4"></i>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-4" data-aos="fade-up" data-aos-delay="300">
+                <a href="#projects" class="btn btn-outline-gradient rounded-pill px-5 py-3 fw-bold d-flex align-items-center justify-content-center gap-2">
+                    Смотреть Магазины <i class="bi bi-shop fs-5"></i>
                 </a>
-                <a href="#about" class="gradient-border px-5 py-3 text-white text-decoration-none fw-medium d-inline-block">
-                    Обо мне и Цены
+                <a href="#contact" class="btn btn-outline-gradient rounded-pill px-5 py-3 fw-bold d-flex align-items-center justify-content-center gap-2">
+                    Обсудить Проект <i class="bi bi-briefcase fs-5"></i>
                 </a>
             </div>
         </div>
@@ -114,40 +120,74 @@
     <section id="about" class="py-5 position-relative">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-5 text-center text-lg-start">
+                <div class="col-lg-5 text-center text-lg-start" data-aos="fade-right">
                     <div class="position-relative d-inline-block">
                         <div class="profile-glow"></div>
                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" alt="Alex Profile" class="img-fluid rounded-circle profile-img border border-2 border-white border-opacity-25 position-relative z-2">
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <h2 class="display-4 fw-bold text-white mb-4">Обо мне</h2>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <h2 class="display-4 fw-bold text-white mb-4">Архитектор готовых решений</h2>
                     <p class="text-gray-300 lead mb-4">
-                        Я веб-разработчик с опытом более 3 лет. Хотя моя должность "Middle", мой подход к качеству кода и архитектуре стремится к уровню "Senior".
+                        Бизнесу не всегда нужен React с нуля. Часто нужен надежный E-commerce или корпоративный портал, который легко администрировать. Я эксперт в том, чтобы выжать максимум из CMS.
                     </p>
                     <p class="text-gray-400 mb-4">
-                        Я специализируюсь на создании быстрых сайтов с использованием HTML5, CSS3 и JavaScript/jQuery. Я не просто пишу код — я решаю задачи. 
+                        Я не просто "натягиваю верстку". Я пишу сложные интеграции, разрабатываю собственные плагины, оптимизирую базы данных (MySQL) и настраиваю серверное кэширование. Мои сайты выдерживают высокие нагрузки и нравятся поисковикам (SEO-friendly).
                     </p>
-                    <p class="text-gray-400 mb-5 border-start border-4 border-primary ps-3 fst-italic">
-                        У меня гибкий подход к работе: на некоторых проектах я выступал в роли <strong class="text-white">Тимлида</strong>, управляя небольшой командой программистов и проводя Code Review. Другие проекты (лендинги, небольшие сервисы) я реализовывал <strong class="text-white">полностью самостоятельно (Solo)</strong> "под ключ".
-                    </p>
+                    <div class="border-start border-4 border-primary ps-4 mb-5">
+                        <p class="text-white fst-italic mb-0">
+                            "Умею работать автономно (Solo) над сайтами «под ключ» и руководить командой контент-менеджеров и джуниоров. Знаю внутренности WordPress и Bitrix лучше, чем документацию."
+                        </p>
+                    </div>
 
-                    <h4 class="h5 text-white fw-bold mb-3 text-uppercase tracking-wide">Ожидаемая ЗП / Ставка</h4>
+                    <h4 class="h6 text-primary-accent fw-bold mb-3 text-uppercase tracking-wide">Инвестиции в меня (ЗП / Ставка)</h4>
                     <div class="d-flex flex-wrap gap-3">
-                        <div class="glass-panel p-3 rounded-3 d-flex align-items-center gap-3 pe-4">
-                            <div class="icon-circle bg-primary bg-opacity-10 text-primary"><i class="bi bi-cash-stack"></i></div>
+                        <div class="glass-panel p-3 rounded-pill px-4 d-flex align-items-center gap-3 hover-lift border-gradient-on-hover">
+                            <i class="bi bi-wallet2 text-white fs-5"></i>
                             <div>
-                                <small class="text-gray-400 d-block text-uppercase fw-bold" style="font-size: 0.7rem;">Зарплата в месяц</small>
-                                <span class="h4 text-white fw-bold mb-0">$3,500</span>
+                                <small class="text-gray-400 d-block text-uppercase fw-bold" style="font-size: 0.65rem;">Full-Time / Месяц</small>
+                                <span class="h5 text-white fw-bold mb-0">$3,500</span>
                             </div>
                         </div>
-                        <div class="glass-panel p-3 rounded-3 d-flex align-items-center gap-3 pe-4">
-                            <div class="icon-circle bg-success bg-opacity-10 text-success"><i class="bi bi-clock-history"></i></div>
+                        <div class="glass-panel p-3 rounded-pill px-4 d-flex align-items-center gap-3 hover-lift border-gradient-on-hover">
+                            <i class="bi bi-hourglass-split text-white fs-5"></i>
                             <div>
-                                <small class="text-gray-400 d-block text-uppercase fw-bold" style="font-size: 0.7rem;">Почасовая ставка</small>
-                                <span class="h4 text-white fw-bold mb-0">$25 / час</span>
+                                <small class="text-gray-400 d-block text-uppercase fw-bold" style="font-size: 0.65rem;">Почасовая (Contract)</small>
+                                <span class="h5 text-white fw-bold mb-0">$25 / час</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-4 position-relative border-top border-bottom border-white border-opacity-10 bg-glass" data-aos="fade-up">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <h3 class="display-5 fw-bold gradient-text mb-0 counter" data-target="3">0</h3>
+                        <span class="text-gray-400 small text-uppercase fw-bold">Года Опыта</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <h3 class="display-5 fw-bold gradient-text mb-0 counter" data-target="45">0</h3>
+                        <span class="text-gray-400 small text-uppercase fw-bold">Сайтов Запущено</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <h3 class="display-5 fw-bold gradient-text mb-0 counter" data-target="15">0</h3>
+                        <span class="text-gray-400 small text-uppercase fw-bold">Кастомных Плагинов</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <h3 class="display-5 fw-bold gradient-text mb-0 counter" data-target="5">0</h3>
+                        <span class="text-gray-400 small text-uppercase fw-bold">Team Lead Кейсов</span>
                     </div>
                 </div>
             </div>
@@ -157,38 +197,50 @@
     <!-- Journey / Timeline Section -->
     <section id="journey" class="py-5 position-relative">
         <div class="container py-5">
-            <h2 class="display-4 fw-bold text-white mb-5 text-center">Мой Путь</h2>
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold text-white">Эволюция Навыков</h2>
+                <p class="text-gray-400">Путь от правки шаблонов до архитектуры сложных порталов.</p>
+            </div>
             
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="timeline">
                         <!-- Item 1 -->
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                             <div class="timeline-dot"></div>
                             <h4 class="timeline-year">2024 - НАСТОЯЩЕЕ ВРЕМЯ</h4>
-                            <div class="glass-card p-4">
-                                <h5 class="text-white fw-bold">Тимлид / Старший разработчик</h5>
-                                <p class="text-gray-400 mb-0">Беру на себя ответственность за архитектуру и руководство командой. Обучаю младших разработчиков (менторство). Фокус на WebGL и сложной анимации.</p>
+                            <div class="glass-card p-4 hover-lift">
+                                <h5 class="text-white fw-bold d-flex justify-content-between">
+                                    Team Lead / CMS Architect
+                                    <span class="badge bg-primary bg-opacity-25 text-primary-accent border border-primary border-opacity-25">Leadership</span>
+                                </h5>
+                                <p class="text-gray-400 mb-0 mt-2">
+                                    Управление разработкой крупных E-commerce проектов. Проектирование архитектуры БД, написание API-интеграций (1C, CRM, Платежные шлюзы). Менторство команды.
+                                </p>
                             </div>
                         </div>
                         
                         <!-- Item 2 -->
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                             <div class="timeline-dot"></div>
                             <h4 class="timeline-year">2022 - 2023</h4>
-                            <div class="glass-card p-4">
-                                <h5 class="text-white fw-bold">Middle Разработчик</h5>
-                                <p class="text-gray-400 mb-0">Работа в команде над крупными E-commerce проектами. Разработка сложных дашбордов, интеграция API, работа с легаси кодом.</p>
+                            <div class="glass-card p-4 hover-lift">
+                                <h5 class="text-white fw-bold">Middle CMS Developer</h5>
+                                <p class="text-gray-400 mb-0 mt-2">
+                                    Глубокая кастомизация WordPress и OpenCart. Разработка собственных тем с нуля (без конструкторов). Оптимизация скорости загрузки (Google PageSpeed).
+                                </p>
                             </div>
                         </div>
 
                         <!-- Item 3 -->
-                        <div class="timeline-item">
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
                             <div class="timeline-dot"></div>
                             <h4 class="timeline-year">2020 - 2021</h4>
-                            <div class="glass-card p-4">
-                                <h5 class="text-white fw-bold">Junior Frontend Разработчик</h5>
-                                <p class="text-gray-400 mb-0">Старт карьеры. Самостоятельная верстка макетов из Figma/PSD. Изучение основ адаптивности и кроссбраузерности.</p>
+                            <div class="glass-card p-4 hover-lift">
+                                <h5 class="text-white fw-bold">Web Master (Freelance)</h5>
+                                <p class="text-gray-400 mb-0 mt-2">
+                                    Создание лендингов и сайтов-визиток. Работа с HTML/CSS, jQuery. Настройка хостингов и перенос сайтов.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -200,27 +252,27 @@
     <!-- Skills Section -->
     <section id="skills" class="py-5 position-relative">
         <div class="container py-5">
-            <div class="text-center mb-5">
-                <h2 class="display-4 fw-bold text-white mb-3">Мой Стек</h2>
+            <div class="text-center mb-5" data-aos="zoom-in">
+                <h2 class="display-4 fw-bold text-white mb-3">Технологический Стек</h2>
                 <p class="text-gray-300 mx-auto" style="max-width: 700px;">
-                    Я выбираю технологии, которые гарантируют скорость разработки и надежность. В основе — глубокое знание нативного <strong>JavaScript</strong> и современных стандартов HTML/CSS, усиленное мощными библиотеками.
+                    Мой профиль — это симбиоз Backend-логики (PHP) и качественного Frontend. Я знаю, как заставить CMS работать быстро.
                 </p>
             </div>
 
             <!-- Frontend vs Backend Slider -->
-            <div class="row justify-content-center mb-5">
+            <div class="row justify-content-center mb-5" data-aos="fade-up">
                 <div class="col-lg-8">
                     <div class="skill-balance-container">
                         <div class="d-flex justify-content-between align-items-end mb-2">
-                            <h5 class="text-white fw-bold mb-0">Frontend (Основное)</h5>
-                            <h5 class="text-gray-500 mb-0">Backend (База)</h5>
+                            <h5 class="text-white fw-bold mb-0">Frontend (UI/UX)</h5>
+                            <h5 class="text-gray-500 mb-0">Backend (PHP/CMS)</h5>
                         </div>
                         <div class="skill-track">
                             <div class="skill-fill"></div>
-                            <div class="skill-thumb"></div>
+                            <div class="skill-thumb" style="left: 60%;"></div>
                         </div>
-                        <div class="text-center text-gray-400 small">
-                            Я больше склоняюсь к визуальной части, анимациям и WebGL, но уверенно чувствую себя при интеграции с серверной логикой.
+                        <div class="text-center text-gray-400 small mt-3">
+                            <i class="bi bi-info-circle me-1"></i> Я Fullstack разработчик в мире CMS. Пишу и логику (PHP), и интерфейсы (JS/CSS).
                         </div>
                     </div>
                 </div>
@@ -228,47 +280,106 @@
 
             <!-- Core Stack -->
             <div class="row g-4 mb-5">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="100">
                     <div class="glass-card p-4 h-100 text-center hover-lift">
-                        <i class="bi bi-filetype-html fs-1 text-primary-accent mb-3 d-block"></i>
-                        <h4 class="h5 text-white">HTML5 & CSS3</h4>
-                        <p class="text-gray-500 small mb-0">Семантика, Flexbox, Grid, BEM методология.</p>
+                        <i class="bi bi-wordpress fs-1 text-primary-accent mb-3 d-block"></i>
+                        <h4 class="h5 text-white">WordPress / Woo</h4>
+                        <p class="text-gray-500 small mb-0">Кастомные темы, ACF Pro, REST API. Превращаю WP в сложный App.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="200">
                     <div class="glass-card p-4 h-100 text-center hover-lift">
-                        <i class="bi bi-filetype-js fs-1 text-warning mb-3 d-block"></i>
-                        <h4 class="h5 text-white">JavaScript (ES6+)</h4>
-                        <p class="text-gray-500 small mb-0">Асинхронность, DOM API, ООП и функциональный подход.</p>
+                        <i class="bi bi-filetype-php fs-1 text-warning mb-3 d-block"></i>
+                        <h4 class="h5 text-white">PHP & MySQL</h4>
+                        <p class="text-gray-500 small mb-0">Написание чистых функций, оптимизация SQL запросов, ООП.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="300">
                     <div class="glass-card p-4 h-100 text-center hover-lift">
-                        <i class="bi bi-bootstrap fs-1 text-secondary mb-3 d-block"></i>
-                        <h4 class="h5 text-white">Bootstrap 5</h4>
-                        <p class="text-gray-500 small mb-0">Адаптивная верстка, кастомизация SCSS.</p>
+                        <i class="bi bi-shop fs-1 text-secondary mb-3 d-block"></i>
+                        <h4 class="h5 text-white">E-Commerce</h4>
+                        <p class="text-gray-500 small mb-0">Bitrix, OpenCart, Shopify. Интеграции оплат и служб доставки.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="400">
                     <div class="glass-card p-4 h-100 text-center hover-lift">
-                        <i class="bi bi-layers fs-1 text-info mb-3 d-block"></i>
-                        <h4 class="h5 text-white">jQuery</h4>
-                        <p class="text-gray-500 small mb-0">Работа с легаси проектами и быстрая разработка плагинов.</p>
+                        <i class="bi bi-filetype-js fs-1 text-info mb-3 d-block"></i>
+                        <h4 class="h5 text-white">JS & jQuery</h4>
+                        <p class="text-gray-500 small mb-0">Оживление интерфейсов. AJAX фильтрация товаров без перезагрузки.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Expertise Breakdowns -->
+            <div class="row g-4 mb-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="glass-panel p-4 h-100 rounded-4">
+                        <h4 class="text-white fw-bold mb-4 border-bottom border-secondary pb-2 d-inline-block">Backend & CMS Core</h4>
+                        <ul class="list-unstyled d-flex flex-column gap-3 text-gray-300">
+                            <li class="d-flex align-items-start gap-3">
+                                <i class="bi bi-check-circle-fill text-primary mt-1"></i>
+                                <div>
+                                    <strong class="text-white">Plugin Architecture:</strong> 
+                                    Разработка плагинов под требования бизнеса. Hooks, Actions, Filters.
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start gap-3">
+                                <i class="bi bi-check-circle-fill text-primary mt-1"></i>
+                                <div>
+                                    <strong class="text-white">Database Optimization:</strong> 
+                                    Нормализация БД, индексы, очистка wp_options. Ускорение тяжелых запросов.
+                                </div>
+                            </li>
+                             <li class="d-flex align-items-start gap-3">
+                                <i class="bi bi-check-circle-fill text-primary mt-1"></i>
+                                <div>
+                                    <strong class="text-white">Security:</strong> 
+                                    Защита от SQL Injection, XSS. Настройка прав доступа, сокрытие админок.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="glass-panel p-4 h-100 rounded-4">
+                        <h4 class="text-white fw-bold mb-4 border-bottom border-secondary pb-2 d-inline-block">Frontend & Performance</h4>
+                        <ul class="list-unstyled d-flex flex-column gap-3 text-gray-300">
+                            <li class="d-flex align-items-start gap-3">
+                                <i class="bi bi-check-circle-fill text-secondary mt-1"></i>
+                                <div>
+                                    <strong class="text-white">Theme Development:</strong> 
+                                    Верстка тем с нуля. Использование Child Themes. Никаких тяжелых Page Builders.
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start gap-3">
+                                <i class="bi bi-check-circle-fill text-secondary mt-1"></i>
+                                <div>
+                                    <strong class="text-white">Caching Strategies:</strong> 
+                                    Redis, Memcached, серверное кэширование nginx. Сайт летает даже на шареде.
+                                </div>
+                            </li>
+                             <li class="d-flex align-items-start gap-3">
+                                <i class="bi bi-check-circle-fill text-secondary mt-1"></i>
+                                <div>
+                                    <strong class="text-white">SEO Technical:</strong> 
+                                    Schema.org разметка, Open Graph, Sitemap.xml генерация, ЧПУ (SEF URL).
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <!-- Additional Toolbox -->
-             <div class="glass-panel p-4 rounded-4 text-center">
-                <h5 class="text-white fw-bold mb-4">Инструментарий и Дополнительно</h5>
+             <div class="glass-panel p-4 rounded-4 text-center" data-aos="fade-up">
+                <h5 class="text-white fw-bold mb-4">Инструменты эффективной работы</h5>
                 <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <span class="badge bg-dark border border-secondary p-2 px-3 fw-normal">Git & GitHub</span>
-                    <span class="badge bg-dark border border-secondary p-2 px-3 fw-normal">WebGL / Three.js (База)</span>
-                    <span class="badge bg-dark border border-secondary p-2 px-3 fw-normal">Figma (Pixel Perfect)</span>
-                    <span class="badge bg-dark border border-secondary p-2 px-3 fw-normal">SASS / SCSS</span>
-                    <span class="badge bg-dark border border-secondary p-2 px-3 fw-normal">REST API</span>
-                    <span class="badge bg-dark border border-secondary p-2 px-3 fw-normal">VS Code</span>
-                    <span class="badge bg-dark border border-secondary p-2 px-3 fw-normal">Webpack</span>
+                    <span class="badge bg-transparent border border-secondary text-gray-300 p-2 px-3 fw-normal rounded-pill">ACF Pro</span>
+                    <span class="badge bg-transparent border border-secondary text-gray-300 p-2 px-3 fw-normal rounded-pill">Composer</span>
+                    <span class="badge bg-transparent border border-secondary text-gray-300 p-2 px-3 fw-normal rounded-pill">WP-CLI</span>
+                    <span class="badge bg-transparent border border-secondary text-gray-300 p-2 px-3 fw-normal rounded-pill">Git</span>
+                    <span class="badge bg-transparent border border-secondary text-gray-300 p-2 px-3 fw-normal rounded-pill">SSH/FTP</span>
+                    <span class="badge bg-transparent border border-secondary text-gray-300 p-2 px-3 fw-normal rounded-pill">PHPMyAdmin</span>
                 </div>
             </div>
         </div>
@@ -277,70 +388,70 @@
     <!-- Projects Section -->
     <section id="projects" class="py-5">
         <div class="container py-5">
-            <div class="text-center mb-5">
-                <h2 class="display-4 fw-bold text-white mb-3">Мои Сайты</h2>
-                <p class="text-gray-400">Реальные проекты с ссылками и доступами.</p>
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold text-white mb-3">Готовые Решения</h2>
+                <p class="text-gray-400">Примеры сложных интеграций и кастомной разработки на CMS.</p>
             </div>
 
             <div class="row g-4">
                 <!-- Project 1 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="glass-card project-card h-100 d-flex flex-column p-0 overflow-hidden">
                         <div class="project-img-wrapper position-relative">
                             <div class="position-absolute top-0 end-0 m-3 z-3">
                                 <span class="badge bg-primary">Тимлид</span>
                             </div>
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" class="w-100 object-fit-cover" style="height: 220px;" alt="Admin Dashboard">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?q=80&w=1000&auto=format&fit=crop" class="w-100 object-fit-cover" style="height: 220px;" alt="WooCommerce Store">
                         </div>
                         <div class="p-4 flex-grow-1 d-flex flex-column">
-                            <h3 class="h4 text-white fw-bold mb-2">Neon Admin Dashboard</h3>
+                            <h3 class="h4 text-white fw-bold mb-2">Electro Market (Woo)</h3>
                             <p class="text-gray-400 small mb-3 flex-grow-1">
-                                Комплексная админ-панель. Я руководил командой из 2-х джуниоров при создании архитектуры.
+                                Маркетплейс электроники на WordPress + WooCommerce. 15,000 товаров, синхронизация с 1С.
                             </p>
-                            <button class="gradient-border w-100 py-2 text-white fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal1">
-                                <i class="bi bi-eye me-2"></i> Детали и Доступы
+                            <button class="btn btn-outline-gradient w-100 py-2 text-white fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                                <i class="bi bi-eye me-2"></i> Детали и Интеграции
                             </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="glass-card project-card h-100 d-flex flex-column p-0 overflow-hidden">
                         <div class="project-img-wrapper position-relative">
                              <div class="position-absolute top-0 end-0 m-3 z-3">
-                                <span class="badge bg-secondary">В команде</span>
+                                <span class="badge bg-secondary">Команда</span>
                             </div>
-                            <img src="https://images.unsplash.com/photo-1523474253062-5c2675422688?q=80&w=1000&auto=format&fit=crop" class="w-100 object-fit-cover" style="height: 220px;" alt="E-Commerce Store">
+                            <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1000&auto=format&fit=crop" class="w-100 object-fit-cover" style="height: 220px;" alt="Corporate Portal">
                         </div>
                         <div class="p-4 flex-grow-1 d-flex flex-column">
-                            <h3 class="h4 text-white fw-bold mb-2">TechGear Shop</h3>
+                            <h3 class="h4 text-white fw-bold mb-2">StroyGroup Portal</h3>
                             <p class="text-gray-400 small mb-3 flex-grow-1">
-                                E-commerce фронтенд. Работал в составе команды, отвечал за корзину и чекаут.
+                                Корпоративный портал строительной компании. Личные кабинеты, калькуляторы смет, закрытый документооборот.
                             </p>
-                            <button class="gradient-border w-100 py-2 text-white fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal2">
-                                <i class="bi bi-eye me-2"></i> Детали и Доступы
+                            <button class="btn btn-outline-gradient w-100 py-2 text-white fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                                <i class="bi bi-eye me-2"></i> Детали и Интеграции
                             </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="glass-card project-card h-100 d-flex flex-column p-0 overflow-hidden">
                         <div class="project-img-wrapper position-relative">
                             <div class="position-absolute top-0 end-0 m-3 z-3">
                                 <span class="badge bg-success">Соло</span>
                             </div>
-                            <img src="https://images.unsplash.com/photo-1555421689-492638d716f5?q=80&w=1000&auto=format&fit=crop" class="w-100 object-fit-cover" style="height: 220px;" alt="SaaS Landing">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop" class="w-100 object-fit-cover" style="height: 220px;" alt="Real Estate Catalog">
                         </div>
                         <div class="p-4 flex-grow-1 d-flex flex-column">
-                            <h3 class="h4 text-white fw-bold mb-2">Flow SaaS Landing</h3>
+                            <h3 class="h4 text-white fw-bold mb-2">Luxury Estate</h3>
                             <p class="text-gray-400 small mb-3 flex-grow-1">
-                                Лендинг с высокой конверсией. Полностью самостоятельная разработка "под ключ".
+                                Каталог недвижимости. Сложная фильтрация объектов (AJAX), карта объектов, интеграция с CRM.
                             </p>
-                            <button class="gradient-border w-100 py-2 text-white fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal3">
-                                <i class="bi bi-eye me-2"></i> Детали и Доступы
+                            <button class="btn btn-outline-gradient w-100 py-2 text-white fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                                <i class="bi bi-eye me-2"></i> Детали и Интеграции
                             </button>
                         </div>
                     </div>
@@ -349,30 +460,106 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 position-relative">
+        <div class="container py-5">
+            <h2 class="display-5 fw-bold text-white mb-5 text-center" data-aos="fade-up">Доверие партнеров</h2>
+            
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="zoom-in" data-aos-delay="200">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Review 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="glass-panel p-5 rounded-4 text-center border border-primary border-opacity-25">
+                                    <div class="mb-4">
+                                        <i class="bi bi-quote fs-1 text-primary-accent opacity-50"></i>
+                                    </div>
+                                    <p class="lead text-gray-300 fst-italic mb-4">
+                                        "Алекс спас наш магазин. Мы падали под нагрузкой в черную пятницу. Он оптимизировал БД, настроил кэш и переписал тяжелые плагины. Продажи выросли на 30%."
+                                    </p>
+                                    <h5 class="text-white fw-bold mb-1">Олег П.</h5>
+                                    <p class="text-primary-accent small text-uppercase fw-bold">Владелец Electro Market</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="glass-panel p-5 rounded-4 text-center border border-primary border-opacity-25">
+                                    <div class="mb-4">
+                                        <i class="bi bi-quote fs-1 text-primary-accent opacity-50"></i>
+                                    </div>
+                                    <p class="lead text-gray-300 fst-italic mb-4">
+                                        "Нам нужен был закрытый портал для сотрудников. Алекс предложил решение на WP, которое сэкономило нам $10k по сравнению с самописом. Работает как часы."
+                                    </p>
+                                    <h5 class="text-white fw-bold mb-1">Ирина В.</h5>
+                                    <p class="text-primary-accent small text-uppercase fw-bold">HR Director, StroyGroup</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="glass-panel p-5 rounded-4 text-center border border-primary border-opacity-25">
+                                    <div class="mb-4">
+                                        <i class="bi bi-quote fs-1 text-primary-accent opacity-50"></i>
+                                    </div>
+                                    <p class="lead text-gray-300 fst-italic mb-4">
+                                        "Работали над каталогом недвижимости. Очень сложная структура данных. Алекс все структурировал через ACF и сделал удобный поиск. Профи."
+                                    </p>
+                                    <h5 class="text-white fw-bold mb-1">Максим С.</h5>
+                                    <p class="text-primary-accent small text-uppercase fw-bold">CEO Luxury Estate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!-- Hobbies Section -->
     <section id="hobbies" class="py-5 position-relative">
         <div class="container py-5">
-            <h2 class="display-5 fw-bold text-white mb-5 text-center">Не только код</h2>
+            <h2 class="display-5 fw-bold text-white mb-5 text-center" data-aos="fade-up">Soft Skills & Увлечения</h2>
             <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="flip-up" data-aos-delay="100">
                     <div class="glass-panel p-4 rounded-4 text-center h-100 hover-lift">
                         <div class="icon-circle mx-auto mb-3 bg-danger bg-opacity-10 text-danger"><i class="bi bi-camera"></i></div>
-                        <h4 class="text-white h5">Фотография</h4>
-                        <p class="text-gray-400 small">Люблю снимать городские пейзажи и неоновый свет. Это помогает мне лучше чувствовать композицию в веб-дизайне.</p>
+                        <h4 class="text-white h5">Детализация</h4>
+                        <p class="text-gray-400 small">Увлекаюсь фотографией. Это развивает чувство композиции и внимание к мелочам ("Pixel Perfect"), что критично в веб-разработке.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="flip-up" data-aos-delay="200">
                     <div class="glass-panel p-4 rounded-4 text-center h-100 hover-lift">
                         <div class="icon-circle mx-auto mb-3 bg-success bg-opacity-10 text-success"><i class="bi bi-controller"></i></div>
-                        <h4 class="text-white h5">Ретро Гейминг</h4>
-                        <p class="text-gray-400 small">Коллекционирую и восстанавливаю старые консоли. Ценю оптимизацию, которую использовали разработчики в эпоху 8 бит.</p>
+                        <h4 class="text-white h5">Оптимизация</h4>
+                        <p class="text-gray-400 small">Восстанавливаю ретро-консоли. Это учит выжимать максимум производительности из ограниченных ресурсов железа.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="flip-up" data-aos-delay="300">
                     <div class="glass-panel p-4 rounded-4 text-center h-100 hover-lift">
                         <div class="icon-circle mx-auto mb-3 bg-warning bg-opacity-10 text-warning"><i class="bi bi-music-note-beamed"></i></div>
-                        <h4 class="text-white h5">Создание музыки</h4>
-                        <p class="text-gray-400 small">Пишу Synth-wave треки в свободное время. Ритм и структура часто вдохновляют меня на правильный "поток" в коде.</p>
+                        <h4 class="text-white h5">Креативность</h4>
+                        <p class="text-gray-400 small">Пишу электронную музыку. Понимаю структуру, ритм и "flow", что помогает создавать логичный и плавный код.</p>
                     </div>
                 </div>
             </div>
@@ -382,25 +569,27 @@
     <!-- Contact Section (No Form) -->
     <section id="contact" class="py-5 position-relative">
         <div class="container py-5 text-center">
-            <h2 class="display-4 fw-bold text-white mb-4">Давайте работать вместе</h2>
-            <p class="text-gray-400 lead mb-5 mx-auto" style="max-width: 600px;">
-                Я открыт для новых предложений. Так как этот сайт размещен на GitHub, я не использую форму обратной связи. Пожалуйста, пишите напрямую:
-            </p>
+            <div data-aos="zoom-in">
+                <h2 class="display-4 fw-bold text-white mb-4">Готов запустить ваш проект</h2>
+                <p class="text-gray-400 lead mb-5 mx-auto" style="max-width: 600px;">
+                    Я беру на себя всю техническую часть: от настройки сервера до обучения ваших сотрудников работе с админкой.
+                </p>
 
-            <div class="d-flex flex-wrap justify-content-center gap-4">
-                <a href="mailto:alex.dev@example.com" class="btn btn-primary-glow px-5 py-3 rounded-pill fw-bold">
-                    <i class="bi bi-envelope-fill me-2"></i> alex.dev@example.com
-                </a>
-                <a href="https://t.me/alexdev" target="_blank" class="gradient-border px-5 py-3 text-white text-decoration-none fw-bold">
-                    <i class="bi bi-telegram me-2"></i> Telegram
-                </a>
-                <a href="https://linkedin.com" target="_blank" class="gradient-border px-5 py-3 text-white text-decoration-none fw-bold">
-                    <i class="bi bi-linkedin me-2"></i> LinkedIn
-                </a>
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                    <a href="mailto:alex.dev@example.com" class="btn btn-outline-gradient px-5 py-3 rounded-pill fw-bold">
+                        <i class="bi bi-envelope-fill me-2"></i> Отправить ТЗ
+                    </a>
+                    <a href="https://t.me/alexdev" target="_blank" class="btn btn-outline-gradient px-5 py-3 rounded-pill fw-bold">
+                        <i class="bi bi-telegram me-2"></i> Telegram
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="btn btn-outline-gradient px-5 py-3 rounded-pill fw-bold">
+                        <i class="bi bi-linkedin me-2"></i> LinkedIn
+                    </a>
+                </div>
             </div>
             
             <div class="border-top border-white border-opacity-10 mt-5 pt-4">
-                <p class="text-gray-500 small mb-0">&copy; <span id="year"></span> Alex Dev. Сделано с <i class="bi bi-heart-fill text-danger mx-1"></i> и Gemini AI.</p>
+                <p class="text-gray-500 small mb-0">&copy; <span id="year"></span> Alex CMS. Решаем задачи бизнеса.</p>
             </div>
         </div>
     </section>
@@ -412,32 +601,34 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content glass-card border-0">
                 <div class="modal-header border-bottom border-white border-opacity-10">
-                    <h5 class="modal-title text-white">Neon Admin Dashboard</h5>
+                    <h5 class="modal-title text-white">Electro Market</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-gray-300">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" class="w-100 rounded-3 mb-4" alt="Project 1">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?q=80&w=1000&auto=format&fit=crop" class="w-100 rounded-3 mb-4" alt="Project 1">
                     
                     <div class="mb-3">
                         <span class="badge bg-primary me-2">Тимлид</span>
-                        <span class="badge bg-dark border border-secondary">Bootstrap 5</span>
-                        <span class="badge bg-dark border border-secondary">Chart.js</span>
+                        <span class="badge bg-dark border border-secondary">WordPress + Woo</span>
+                        <span class="badge bg-dark border border-secondary">Redis</span>
                     </div>
 
-                    <h6 class="text-primary-accent fw-bold text-uppercase mb-2">Описание</h6>
-                    <p>Полностью адаптивная панель администратора для визуализации данных. В этом проекте я выполнял роль Тимлида: спроектировал архитектуру, раздавал задачи двум Junior-разработчикам и проводил ревью кода. Реализованы графики в реальном времени и темная тема.</p>
+                    <h6 class="text-primary-accent fw-bold text-uppercase mb-2">Бизнес-задача</h6>
+                    <p>Запуск магазина на 15,000 товаров с интеграцией складского учета (1C).</p>
+                    <h6 class="text-primary-accent fw-bold text-uppercase mb-2">Мое решение</h6>
+                    <p>Настроил двустороннюю синхронизацию через REST API. Реализовал фасетный поиск (ElasticSearch), так как стандартный поиск WP не справлялся. Оптимизировал БД, время ответа сервера < 200ms.</p>
                     
                     <div class="bg-dark bg-opacity-50 p-3 rounded-3 border border-white border-opacity-10 mb-3">
-                        <h6 class="text-white small fw-bold text-uppercase mb-2"><i class="bi bi-key-fill me-2"></i>Доступы (Demo)</h6>
+                        <h6 class="text-white small fw-bold text-uppercase mb-2"><i class="bi bi-key-fill me-2"></i>Доступы (Staging)</h6>
                         <div class="row g-2 small">
-                            <div class="col-sm-6"><strong>URL:</strong> <a href="#" class="text-info">demo-dashboard.com</a></div>
-                            <div class="col-sm-6"><strong>Логин:</strong> admin_demo</div>
-                            <div class="col-sm-6"><strong>Пароль:</strong> demo1234</div>
+                            <div class="col-sm-6"><strong>URL:</strong> <a href="#" class="text-info">dev.electro-market.com</a></div>
+                            <div class="col-sm-6"><strong>Login:</strong> manager</div>
+                            <div class="col-sm-6"><strong>Pass:</strong> demo1234</div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer border-top border-white border-opacity-10">
-                    <a href="#" target="_blank" class="btn btn-primary-glow btn-sm">Перейти на сайт</a>
+                    <a href="#" target="_blank" class="btn btn-outline-gradient btn-sm">Перейти на сайт</a>
                     <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Закрыть</button>
                 </div>
             </div>
@@ -449,31 +640,33 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content glass-card border-0">
                 <div class="modal-header border-bottom border-white border-opacity-10">
-                    <h5 class="modal-title text-white">TechGear Shop</h5>
+                    <h5 class="modal-title text-white">StroyGroup Portal</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-gray-300">
-                    <img src="https://images.unsplash.com/photo-1523474253062-5c2675422688?q=80&w=1000&auto=format&fit=crop" class="w-100 rounded-3 mb-4" alt="Project 2">
+                    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1000&auto=format&fit=crop" class="w-100 rounded-3 mb-4" alt="Project 2">
                     
                     <div class="mb-3">
                         <span class="badge bg-secondary me-2">В команде</span>
-                        <span class="badge bg-dark border border-secondary">jQuery</span>
-                        <span class="badge bg-dark border border-secondary">E-commerce</span>
+                        <span class="badge bg-dark border border-secondary">WordPress</span>
+                        <span class="badge bg-dark border border-secondary">Custom Plugins</span>
                     </div>
 
-                    <h6 class="text-primary-accent fw-bold text-uppercase mb-2">Описание</h6>
-                    <p>Стильный интернет-магазин электроники. Я работал в составе команды из 5 человек. Моей зоной ответственности была корзина товаров (Local Storage) и страница оформления заказа. Обеспечил плавные переходы и валидацию форм.</p>
+                    <h6 class="text-primary-accent fw-bold text-uppercase mb-2">Бизнес-задача</h6>
+                    <p>Создать закрытый интранет для сотрудников с базой знаний и документооборотом.</p>
+                    <h6 class="text-primary-accent fw-bold text-uppercase mb-2">Мое решение</h6>
+                    <p>Разработал плагин для управления ролями доступа (ACL). Создал кастомные типы записей (Custom Post Types) для Документов и Сотрудников. Интегрировал Active Directory для единого входа.</p>
                     
                     <div class="bg-dark bg-opacity-50 p-3 rounded-3 border border-white border-opacity-10 mb-3">
                         <h6 class="text-white small fw-bold text-uppercase mb-2"><i class="bi bi-key-fill me-2"></i>Доступы</h6>
                         <div class="row g-2 small">
-                            <div class="col-sm-6"><strong>URL:</strong> <a href="#" class="text-info">techgear-shop.demo</a></div>
-                            <div class="col-sm-6"><strong>Прим:</strong> Регистрация не требуется.</div>
+                            <div class="col-sm-6"><strong>URL:</strong> <a href="#" class="text-info">portal.stroygroup.demo</a></div>
+                            <div class="col-sm-6"><strong>Прим:</strong> Внутренняя сеть (VPN)</div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer border-top border-white border-opacity-10">
-                    <a href="#" target="_blank" class="btn btn-primary-glow btn-sm">Перейти на сайт</a>
+                    <a href="#" target="_blank" class="btn btn-outline-gradient btn-sm">Перейти на сайт</a>
                     <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Закрыть</button>
                 </div>
             </div>
@@ -485,31 +678,33 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content glass-card border-0">
                 <div class="modal-header border-bottom border-white border-opacity-10">
-                    <h5 class="modal-title text-white">Flow SaaS Landing</h5>
+                    <h5 class="modal-title text-white">Luxury Estate</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-gray-300">
-                    <img src="https://images.unsplash.com/photo-1555421689-492638d716f5?q=80&w=1000&auto=format&fit=crop" class="w-100 rounded-3 mb-4" alt="Project 3">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop" class="w-100 rounded-3 mb-4" alt="Project 3">
                     
                     <div class="mb-3">
                         <span class="badge bg-success me-2">Соло проект</span>
-                        <span class="badge bg-dark border border-secondary">CSS Animation</span>
-                        <span class="badge bg-dark border border-secondary">SEO</span>
+                        <span class="badge bg-dark border border-secondary">ACF Pro</span>
+                        <span class="badge bg-dark border border-secondary">Maps API</span>
                     </div>
 
-                    <h6 class="text-primary-accent fw-bold text-uppercase mb-2">Описание</h6>
-                    <p>Маркетинговый лендинг для SaaS продукта. Проект выполнен мной полностью самостоятельно ("под ключ"). Основной упор сделан на Performance (100 баллов Google Lighthouse) и сложные CSS анимации для вовлечения пользователей.</p>
+                    <h6 class="text-primary-accent fw-bold text-uppercase mb-2">Бизнес-задача</h6>
+                    <p>Каталог элитной недвижимости с удобным подбором и интерактивной картой.</p>
+                    <h6 class="text-primary-accent fw-bold text-uppercase mb-2">Мое решение</h6>
+                    <p>Реализовал сложные связи объектов (ЖК -> Корпус -> Квартира) через ACF. Написал AJAX-фильтр, который мгновенно обновляет карту без перезагрузки страницы. Интеграция с amoCRM.</p>
                     
                     <div class="bg-dark bg-opacity-50 p-3 rounded-3 border border-white border-opacity-10 mb-3">
                         <h6 class="text-white small fw-bold text-uppercase mb-2"><i class="bi bi-key-fill me-2"></i>Доступы</h6>
                         <div class="row g-2 small">
-                            <div class="col-sm-6"><strong>URL:</strong> <a href="#" class="text-info">flow-saas.demo</a></div>
+                            <div class="col-sm-6"><strong>URL:</strong> <a href="#" class="text-info">estate.demo</a></div>
                             <div class="col-sm-6"><strong>Прим:</strong> Открытый доступ.</div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer border-top border-white border-opacity-10">
-                    <a href="#" target="_blank" class="btn btn-primary-glow btn-sm">Перейти на сайт</a>
+                    <a href="#" target="_blank" class="btn btn-outline-gradient btn-sm">Перейти на сайт</a>
                     <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Закрыть</button>
                 </div>
             </div>
@@ -518,14 +713,14 @@
 
 
     <!-- Chat Widget -->
-    <div id="chat-widget-container" class="position-fixed bottom-0 end-0 p-4 z-3 d-flex flex-column align-items-end">
+    <div id="chat-widget-container" class="position-fixed bottom-0 end-0 p-4 z-3 d-flex flex-column align-items-end" data-aos="fade-left" data-aos-delay="1000">
         
         <!-- Chat Window -->
         <div id="chat-window" class="chat-window mb-3 rounded-4 overflow-hidden shadow-lg d-none">
             <div class="chat-header p-3 d-flex justify-content-between align-items-center">
                 <div class="d-flex align-items-center gap-2 text-white">
                     <div class="status-dot"></div>
-                    <span class="fw-semibold">AI Ассистент</span>
+                    <span class="fw-semibold">AI Ассистент HR</span>
                 </div>
                 <button type="button" id="close-chat" class="btn btn-link text-white-50 p-0 text-decoration-none hover-white">
                     <i class="bi bi-x-lg"></i>
@@ -538,8 +733,8 @@
 
             <div class="chat-input-area p-3 border-top border-white border-opacity-10 bg-glass">
                 <form id="chat-form" class="position-relative">
-                    <input type="text" id="chat-input" class="form-control rounded-pill pe-5 text-white" placeholder="Введите сообщение..." autocomplete="off">
-                    <button type="submit" id="send-btn" class="btn btn-primary-glow rounded-circle position-absolute top-50 end-0 translate-middle-y me-1 p-0 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                    <input type="text" id="chat-input" class="form-control rounded-pill pe-5 text-white" placeholder="Спросите про опыт..." autocomplete="off">
+                    <button type="submit" id="send-btn" class="btn btn-outline-gradient rounded-circle position-absolute top-50 end-0 translate-middle-y me-1 p-0 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; border-width: 1px;">
                         <i class="bi bi-arrow-up-short fw-bold"></i>
                     </button>
                 </form>
@@ -547,7 +742,7 @@
         </div>
 
         <!-- Toggle Button -->
-        <button id="chat-toggle" class="btn btn-primary-glow rounded-circle p-0 d-flex align-items-center justify-content-center shadow-lg pulsing-btn">
+        <button id="chat-toggle" class="btn btn-outline-gradient rounded-circle p-0 d-flex align-items-center justify-content-center shadow-lg pulsing-btn">
             <i class="bi bi-chat-fill fs-4 text-white"></i>
         </button>
     </div>
@@ -555,6 +750,7 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="script.js"></script>
 </body>
 </html>
