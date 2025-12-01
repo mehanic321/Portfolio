@@ -1,5 +1,31 @@
 // --- UI Logic with jQuery ---
 $(document).ready(function() {
+    // Check for Hardware Acceleration (WebGL) to prevent lag
+    function hasHardwareAcceleration() {
+        try {
+            const canvas = document.createElement('canvas');
+            const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+            if (!gl) return false;
+
+            const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+            if (!debugInfo) return true; // Assume true if we can't check, but we have GL context
+
+            const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+            // Filter out known slow software renderers
+            if (/swiftshader|llvmpipe|software|basic render/i.test(renderer)) {
+                return false;
+            }
+            return true;
+        } catch (e) {
+            return false;
+        }
+    }
+
+    // Only show the 3D cube if hardware acceleration is available
+    if (hasHardwareAcceleration()) {
+        $('#webgl-container').fadeIn(1500);
+    }
+
     // Initialize AOS
     AOS.init({
         once: true, // Animation happens only once - while scrolling down
