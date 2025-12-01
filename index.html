@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Dev | Веб-разработчик</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Import Map for Gemini -->
+    <script type="importmap">
+    {
+      "imports": {
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+      }
+    }
+    </script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+
+    <!-- Grid Background Overlay -->
+    <div class="grid-bg"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top transition-all">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                ALEX<span class="text-primary-accent">.DEV</span>
+            </a>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list fs-1"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#home">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#journey">Путь</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Стек</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Проекты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Хобби</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+                <div class="d-flex ms-lg-4 gap-3 social-icons mt-3 mt-lg-0 align-items-center">
+                    <a href="https://github.com" target="_blank" class="social-link"><i class="bi bi-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-vh-100 d-flex align-items-center position-relative overflow-hidden">
+        
+        <!-- WebGL Cube Container (Placeholder for your code) -->
+        <div id="webgl-container" class="webgl-wrapper">
+            <!-- CSS Placeholder Cube -->
+            <div class="cube-scene">
+                <div class="cube">
+                    <div class="cube-face cube-face-front"><i class="bi bi-code-slash"></i></div>
+                    <div class="cube-face cube-face-back"><i class="bi bi-braces"></i></div>
+                    <div class="cube-face cube-face-right"><i class="bi bi-terminal"></i></div>
+                    <div class="cube-face cube-face-left"><i class="bi bi-laptop"></i></div>
+                    <div class="cube-face cube-face-top"><i class="bi bi-cpu"></i></div>
+                    <div class="cube-face cube-face-bottom"><i class="bi bi-database"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background Blobs -->
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
+        <div class="container position-relative z-2 text-center">
+            <div class="d-inline-block px-4 py-2 mb-4 rounded-pill glass-badge border border-white border-opacity-10 glow-on-hover">
+                <span class="text-info fw-bold text-uppercase small tracking-wide">✨ Открыт к предложениям</span>
+            </div>
+            
+            <h1 class="display-1 fw-bold text-white mb-4 hero-title tracking-tight">
+                Я Middle 
+                <span class="position-relative d-inline-block mx-2">
+                    <span class="flicker-text text-primary position-absolute top-50 start-50 translate-middle" style="opacity: 0.3; filter: blur(2px);">Senior</span>
+                    <span class="flicker-text text-primary">Senior</span>
+                </span>
+                <br>
+                <span class="gradient-text">Веб-разработчик</span>
+            </h1>
+            
+            <p class="lead text-gray-300 mx-auto mb-5 opacity-90" style="max-width: 700px; font-weight: 300;">
+                Создаю надежные сайты и приложения. Фокусируюсь на чистом коде, производительности и реальной пользе для бизнеса.
+            </p>
+            
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-4">
+                <a href="#projects" class="btn btn-primary-glow rounded-pill px-5 py-3 fw-bold d-flex align-items-center justify-content-center gap-2">
+                    Смотреть работы <i class="bi bi-window-stack fs-4"></i>
+                </a>
+                <a href="#about" class="gradient-border px-5 py-3 text-white text-decoration-none fw-medium d-inline-block">
+                    Обо мне и Цены
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Rates Section -->
+    <section id="about" class="py-5 position-relative">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 text-center text-lg-start">
+                    <div class="position-relative d-inline-block">
+                        <div class="profile-glow"></div>
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" alt="Alex Profile" class="img-fluid rounded-circle profile-img border border-2 border-white border-opacity-25 position-relative z-2">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h2 class="display-4 fw-bold text-white mb-4">Обо мне</h2>
+                    <p class="text-gray-300 lead mb-4">
+                        Я веб-разработчик с опытом более 3 лет. Хотя моя должность "Middle", мой подход к качеству кода и архитектуре стремится к уровню "Senior".
+                    </p>
+                    <p class="text-gray-400 mb-4">
+                        Я специализируюсь на создании быстрых сайтов с использованием HTML5, CSS3 и JavaScript/jQuery. Я не просто пишу код — я решаю задачи. 
+                    </p>
+                    <p class="text-gray-400 mb-5 border-start border-4 border-primary ps-3 fst-italic">
+                        У меня гибкий подход к работе: на некоторых проектах я выступал в роли <strong class="text-white">Тимлида</strong>, управляя небольшой командой программистов и проводя Code Review. Другие проекты (лендинги, небольшие сервисы) я реализовывал <strong class="text-white">полностью самостоятельно (Solo)</strong> "под ключ".
+                    </p>
+
+                    <h4 class="h5 text-white fw-bold mb-3 text-uppercase tracking-wide">Ожидаемая ЗП / Ставка</h4>
+                    <div class="d-flex flex-wrap gap-3">
+                        <div class="glass-panel p-3 rounded-3 d-flex align-items-center gap-3 pe-4">
+                            <div class="icon-circle bg-primary bg-opacity-10 text-primary"><i class="bi bi-cash-stack"></i></div>
+                            <div>
+                                <small class="text-gray-400 d-block text-uppercase fw-bold" style="font-size: 0.7rem;">Зарплата в месяц</small>
+                                <span class="h4 text-white fw-bold mb-0">$3,500</span>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-3 rounded-3 d-flex align-items-center gap-3 pe-4">
+                            <div class="icon-circle bg-success bg-opacity-10 text-success"><i class="bi bi-clock-history"></i></div>
+                            <div>
+                                <small class="text-gray-400 d-block text-uppercase fw-bold" style="font-size: 0.7rem;">Почасовая ставка</small>
+                                <span class="h4 text-white fw-bold mb-0">$25 / час</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey / Timeline Section -->
+    <section id="journey" class="py-5 position-relative">
+        <div class="container py-5">
+            <h2 class="display-4 fw-bold text-white mb-5 text-center">Мой Путь</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="timeline">
+                        <!-- Item 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4 class="timeline-year">2024 - НАСТОЯЩЕЕ ВРЕМЯ</h4>
+                            <div class="glass-card p-4">
+                                <h5 class="text-white fw-bold">Тимлид / Старший разработчик</h5>
+                                <p class="text-gray-400 mb-0">Беру на себя ответственность за архитектуру и руководство командой. Обучаю младших разработчиков (менторство). Фокус на WebGL и сложной анимации.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4 class="timeline-year">2022 - 2023</h4>
+                            <div class="glass-card p-4">
+                                <h5 class="text-white fw-bold">Middle Разработчик</h5>
+                                <p class="text-gray-400 mb-0">Работа в команде над крупными E-commerce проектами. Разработка сложных дашбордов, интеграция API, работа с легаси кодом.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4 class="timeline-year">2020 - 2021</h4>
+                            <div class="glass-card p-4">
+                                <h5 class="text-white fw-bold">Junior Frontend Разработчик</h5>
+                                <p class="text-gray-400 mb-0">Старт карьеры. Самостоятельная верстка макетов из Figma/PSD. Изучение основ адаптивности и кроссбраузерности.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 position-relative">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-white mb-3">Мой Стек</h2>
+                <p class="text-gray-300 mx-auto" style="max-width: 700px;">
+                    Я выбираю технологии, которые гарантируют скорость разработки и надежность. В основе — глубокое знание нативного <strong>JavaScript</strong> и современных стандартов HTML/CSS, усиленное мощными библиотеками.
+                </p>
+            </div>
+
+            <!-- Frontend vs Backend Slider -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8">
+                    <div class="skill-balance-container">
+                        <div class="d-flex justify-content-between align-items-end mb-2">
+                            <h5 class="text-white fw-bold mb-0">Frontend (Основное)</h5>
+                            <h5 class="text-gray-500 mb-0">Backend (База)</h5>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill"></div>
+                            <div class="skill-thumb"></div>
+                        </div>
+                        <div class="text-center text-gray-400 small">
+                            Я больше склоняюсь к визуальной части, анимациям и WebGL, но уверенно чувствую себя при интеграции с серверной логикой.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Stack -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card p-4 h-100 text-center hover-lift">
+                        <i class="bi bi-filetype-html fs-1 text-primary-accent mb-3 d-block"></i>
+                        <h4 class="h5 text-white">HTML5 & CSS3</h4>
+                        <p class="text-gray-500 small mb-0">Семантика, Flexbox, Grid, BEM методология.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card p-4 h-100 text-center hover-lift">
+                        <i class="bi bi-filetype-js fs-1 text-warning mb-3 d-block"></i>
+                        <h4 class="h5 text-white">JavaScript (ES6+)</h4>
+                        <p class="text-gray-500 small mb-0">Асинхронность, DOM API, ООП и функциональный подход.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card p-4 h-100 text-center hover-lift">
+                        <i class="bi bi-bootstrap fs-1 text-secondary mb-3 d-block"></i>
+                        <h4 class="h5 text-white">Bootstrap 5</h4>
+                        <p class="text-gray-500 small mb-0">Адаптивная верстка, кастомизация SCSS.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card p-4 h-100 text-center hover-lift">
+                        <i class="bi bi-layers fs-1 text-info mb-3 d-block"></i>
+                        <h4 class="h5 text-white">jQuery</h4>
+                        <p class="text-gray-500 small mb-0">Работа с легаси проектами и быстрая разработка плагинов.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Toolbox -->
+             <div class="glass-panel p-4 rounded-4 text-center">
+                <h5 class="text-white fw-bold mb-4">Инструментарий и Дополнительно</h5>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <span class="badge bg-dark border border-secondary p-2 px-3 fw-normal">Git & GitHub</span>
+                    <span class="badge bg-dark border border-secondary p-2 px-3 fw-normal">WebGL / Three.js (База)</span>
+                    <span class="badge bg-dark border border-secondary p-2 px-3 fw-normal">Figma (Pixel Perfect)</span>
+                    <span class="badge bg-dark border border-secondary p-2 px-3 fw-normal">SASS / SCSS</span>
+                    <span class="badge bg-dark border border-secondary p-2 px-3 fw-normal">REST API</span>
+                    <span class="badge bg-dark border border-secondary p-2 px-3 fw-normal">VS Code</span>
+                    <span class="badge bg-dark border border-secondary p-2 px-3 fw-normal">Webpack</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-white mb-3">Мои Сайты</h2>
+                <p class="text-gray-400">Реальные проекты с ссылками и доступами.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card project-card h-100 d-flex flex-column p-0 overflow-hidden">
+                        <div class="project-img-wrapper position-relative">
+                            <div class="position-absolute top-0 end-0 m-3 z-3">
+                                <span class="badge bg-primary">Тимлид</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" class="w-100 object-fit-cover" style="height: 220px;" alt="Admin Dashboard">
+                        </div>
+                        <div class="p-4 flex-grow-1 d-flex flex-column">
+                            <h3 class="h4 text-white fw-bold mb-2">Neon Admin Dashboard</h3>
+                            <p class="text-gray-400 small mb-3 flex-grow-1">
+                                Комплексная админ-панель. Я руководил командой из 2-х джуниоров при создании архитектуры.
+                            </p>
+                            <button class="gradient-border w-100 py-2 text-white fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                                <i class="bi bi-eye me-2"></i> Детали и Доступы
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card project-card h-100 d-flex flex-column p-0 overflow-hidden">
+                        <div class="project-img-wrapper position-relative">
+                             <div class="position-absolute top-0 end-0 m-3 z-3">
+                                <span class="badge bg-secondary">В команде</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1523474253062-5c2675422688?q=80&w=1000&auto=format&fit=crop" class="w-100 object-fit-cover" style="height: 220px;" alt="E-Commerce Store">
+                        </div>
+                        <div class="p-4 flex-grow-1 d-flex flex-column">
+                            <h3 class="h4 text-white fw-bold mb-2">TechGear Shop</h3>
+                            <p class="text-gray-400 small mb-3 flex-grow-1">
+                                E-commerce фронтенд. Работал в составе команды, отвечал за корзину и чекаут.
+                            </p>
+                            <button class="gradient-border w-100 py-2 text-white fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                                <i class="bi bi-eye me-2"></i> Детали и Доступы
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card project-card h-100 d-flex flex-column p-0 overflow-hidden">
+                        <div class="project-img-wrapper position-relative">
+                            <div class="position-absolute top-0 end-0 m-3 z-3">
+                                <span class="badge bg-success">Соло</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1555421689-492638d716f5?q=80&w=1000&auto=format&fit=crop" class="w-100 object-fit-cover" style="height: 220px;" alt="SaaS Landing">
+                        </div>
+                        <div class="p-4 flex-grow-1 d-flex flex-column">
+                            <h3 class="h4 text-white fw-bold mb-2">Flow SaaS Landing</h3>
+                            <p class="text-gray-400 small mb-3 flex-grow-1">
+                                Лендинг с высокой конверсией. Полностью самостоятельная разработка "под ключ".
+                            </p>
+                            <button class="gradient-border w-100 py-2 text-white fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                                <i class="bi bi-eye me-2"></i> Детали и Доступы
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="py-5 position-relative">
+        <div class="container py-5">
+            <h2 class="display-5 fw-bold text-white mb-5 text-center">Не только код</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="glass-panel p-4 rounded-4 text-center h-100 hover-lift">
+                        <div class="icon-circle mx-auto mb-3 bg-danger bg-opacity-10 text-danger"><i class="bi bi-camera"></i></div>
+                        <h4 class="text-white h5">Фотография</h4>
+                        <p class="text-gray-400 small">Люблю снимать городские пейзажи и неоновый свет. Это помогает мне лучше чувствовать композицию в веб-дизайне.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-panel p-4 rounded-4 text-center h-100 hover-lift">
+                        <div class="icon-circle mx-auto mb-3 bg-success bg-opacity-10 text-success"><i class="bi bi-controller"></i></div>
+                        <h4 class="text-white h5">Ретро Гейминг</h4>
+                        <p class="text-gray-400 small">Коллекционирую и восстанавливаю старые консоли. Ценю оптимизацию, которую использовали разработчики в эпоху 8 бит.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-panel p-4 rounded-4 text-center h-100 hover-lift">
+                        <div class="icon-circle mx-auto mb-3 bg-warning bg-opacity-10 text-warning"><i class="bi bi-music-note-beamed"></i></div>
+                        <h4 class="text-white h5">Создание музыки</h4>
+                        <p class="text-gray-400 small">Пишу Synth-wave треки в свободное время. Ритм и структура часто вдохновляют меня на правильный "поток" в коде.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (No Form) -->
+    <section id="contact" class="py-5 position-relative">
+        <div class="container py-5 text-center">
+            <h2 class="display-4 fw-bold text-white mb-4">Давайте работать вместе</h2>
+            <p class="text-gray-400 lead mb-5 mx-auto" style="max-width: 600px;">
+                Я открыт для новых предложений. Так как этот сайт размещен на GitHub, я не использую форму обратной связи. Пожалуйста, пишите напрямую:
+            </p>
+
+            <div class="d-flex flex-wrap justify-content-center gap-4">
+                <a href="mailto:alex.dev@example.com" class="btn btn-primary-glow px-5 py-3 rounded-pill fw-bold">
+                    <i class="bi bi-envelope-fill me-2"></i> alex.dev@example.com
+                </a>
+                <a href="https://t.me/alexdev" target="_blank" class="gradient-border px-5 py-3 text-white text-decoration-none fw-bold">
+                    <i class="bi bi-telegram me-2"></i> Telegram
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="gradient-border px-5 py-3 text-white text-decoration-none fw-bold">
+                    <i class="bi bi-linkedin me-2"></i> LinkedIn
+                </a>
+            </div>
+            
+            <div class="border-top border-white border-opacity-10 mt-5 pt-4">
+                <p class="text-gray-500 small mb-0">&copy; <span id="year"></span> Alex Dev. Сделано с <i class="bi bi-heart-fill text-danger mx-1"></i> и Gemini AI.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Projects -->
+    
+    <!-- Modal 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content glass-card border-0">
+                <div class="modal-header border-bottom border-white border-opacity-10">
+                    <h5 class="modal-title text-white">Neon Admin Dashboard</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-gray-300">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" class="w-100 rounded-3 mb-4" alt="Project 1">
+                    
+                    <div class="mb-3">
+                        <span class="badge bg-primary me-2">Тимлид</span>
+                        <span class="badge bg-dark border border-secondary">Bootstrap 5</span>
+                        <span class="badge bg-dark border border-secondary">Chart.js</span>
+                    </div>
+
+                    <h6 class="text-primary-accent fw-bold text-uppercase mb-2">Описание</h6>
+                    <p>Полностью адаптивная панель администратора для визуализации данных. В этом проекте я выполнял роль Тимлида: спроектировал архитектуру, раздавал задачи двум Junior-разработчикам и проводил ревью кода. Реализованы графики в реальном времени и темная тема.</p>
+                    
+                    <div class="bg-dark bg-opacity-50 p-3 rounded-3 border border-white border-opacity-10 mb-3">
+                        <h6 class="text-white small fw-bold text-uppercase mb-2"><i class="bi bi-key-fill me-2"></i>Доступы (Demo)</h6>
+                        <div class="row g-2 small">
+                            <div class="col-sm-6"><strong>URL:</strong> <a href="#" class="text-info">demo-dashboard.com</a></div>
+                            <div class="col-sm-6"><strong>Логин:</strong> admin_demo</div>
+                            <div class="col-sm-6"><strong>Пароль:</strong> demo1234</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-white border-opacity-10">
+                    <a href="#" target="_blank" class="btn btn-primary-glow btn-sm">Перейти на сайт</a>
+                    <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content glass-card border-0">
+                <div class="modal-header border-bottom border-white border-opacity-10">
+                    <h5 class="modal-title text-white">TechGear Shop</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-gray-300">
+                    <img src="https://images.unsplash.com/photo-1523474253062-5c2675422688?q=80&w=1000&auto=format&fit=crop" class="w-100 rounded-3 mb-4" alt="Project 2">
+                    
+                    <div class="mb-3">
+                        <span class="badge bg-secondary me-2">В команде</span>
+                        <span class="badge bg-dark border border-secondary">jQuery</span>
+                        <span class="badge bg-dark border border-secondary">E-commerce</span>
+                    </div>
+
+                    <h6 class="text-primary-accent fw-bold text-uppercase mb-2">Описание</h6>
+                    <p>Стильный интернет-магазин электроники. Я работал в составе команды из 5 человек. Моей зоной ответственности была корзина товаров (Local Storage) и страница оформления заказа. Обеспечил плавные переходы и валидацию форм.</p>
+                    
+                    <div class="bg-dark bg-opacity-50 p-3 rounded-3 border border-white border-opacity-10 mb-3">
+                        <h6 class="text-white small fw-bold text-uppercase mb-2"><i class="bi bi-key-fill me-2"></i>Доступы</h6>
+                        <div class="row g-2 small">
+                            <div class="col-sm-6"><strong>URL:</strong> <a href="#" class="text-info">techgear-shop.demo</a></div>
+                            <div class="col-sm-6"><strong>Прим:</strong> Регистрация не требуется.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-white border-opacity-10">
+                    <a href="#" target="_blank" class="btn btn-primary-glow btn-sm">Перейти на сайт</a>
+                    <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content glass-card border-0">
+                <div class="modal-header border-bottom border-white border-opacity-10">
+                    <h5 class="modal-title text-white">Flow SaaS Landing</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-gray-300">
+                    <img src="https://images.unsplash.com/photo-1555421689-492638d716f5?q=80&w=1000&auto=format&fit=crop" class="w-100 rounded-3 mb-4" alt="Project 3">
+                    
+                    <div class="mb-3">
+                        <span class="badge bg-success me-2">Соло проект</span>
+                        <span class="badge bg-dark border border-secondary">CSS Animation</span>
+                        <span class="badge bg-dark border border-secondary">SEO</span>
+                    </div>
+
+                    <h6 class="text-primary-accent fw-bold text-uppercase mb-2">Описание</h6>
+                    <p>Маркетинговый лендинг для SaaS продукта. Проект выполнен мной полностью самостоятельно ("под ключ"). Основной упор сделан на Performance (100 баллов Google Lighthouse) и сложные CSS анимации для вовлечения пользователей.</p>
+                    
+                    <div class="bg-dark bg-opacity-50 p-3 rounded-3 border border-white border-opacity-10 mb-3">
+                        <h6 class="text-white small fw-bold text-uppercase mb-2"><i class="bi bi-key-fill me-2"></i>Доступы</h6>
+                        <div class="row g-2 small">
+                            <div class="col-sm-6"><strong>URL:</strong> <a href="#" class="text-info">flow-saas.demo</a></div>
+                            <div class="col-sm-6"><strong>Прим:</strong> Открытый доступ.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-white border-opacity-10">
+                    <a href="#" target="_blank" class="btn btn-primary-glow btn-sm">Перейти на сайт</a>
+                    <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Chat Widget -->
+    <div id="chat-widget-container" class="position-fixed bottom-0 end-0 p-4 z-3 d-flex flex-column align-items-end">
+        
+        <!-- Chat Window -->
+        <div id="chat-window" class="chat-window mb-3 rounded-4 overflow-hidden shadow-lg d-none">
+            <div class="chat-header p-3 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-2 text-white">
+                    <div class="status-dot"></div>
+                    <span class="fw-semibold">AI Ассистент</span>
+                </div>
+                <button type="button" id="close-chat" class="btn btn-link text-white-50 p-0 text-decoration-none hover-white">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            
+            <div id="chat-messages" class="chat-messages p-3 d-flex flex-column gap-3 overflow-auto custom-scrollbar">
+                <!-- Сообщения будут добавлены через JS -->
+            </div>
+
+            <div class="chat-input-area p-3 border-top border-white border-opacity-10 bg-glass">
+                <form id="chat-form" class="position-relative">
+                    <input type="text" id="chat-input" class="form-control rounded-pill pe-5 text-white" placeholder="Введите сообщение..." autocomplete="off">
+                    <button type="submit" id="send-btn" class="btn btn-primary-glow rounded-circle position-absolute top-50 end-0 translate-middle-y me-1 p-0 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                        <i class="bi bi-arrow-up-short fw-bold"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Toggle Button -->
+        <button id="chat-toggle" class="btn btn-primary-glow rounded-circle p-0 d-flex align-items-center justify-content-center shadow-lg pulsing-btn">
+            <i class="bi bi-chat-fill fs-4 text-white"></i>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
