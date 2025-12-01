@@ -253,9 +253,9 @@
     <section id="skills" class="py-5 position-relative">
         <div class="container py-5">
             <div class="text-center mb-5" data-aos="zoom-in">
-                <h2 class="display-4 fw-bold text-white mb-3">Технологический Стек</h2>
+                <h2 class="display-4 fw-bold text-white mb-3">Технологический Арсенал</h2>
                 <p class="text-gray-300 mx-auto" style="max-width: 700px;">
-                    Мой профиль — это симбиоз Backend-логики (PHP) и качественного Frontend. Я знаю, как заставить CMS работать быстро.
+                    Мой профиль — это симбиоз Backend-логики (PHP) и качественного Frontend. Каждая CMS требует своего подхода, и я знаю их нюансы.
                 </p>
             </div>
 
@@ -278,94 +278,157 @@
                 </div>
             </div>
 
-            <!-- Core Stack -->
-            <div class="row g-4 mb-5">
-                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="100">
-                    <div class="glass-card p-4 h-100 text-center hover-lift">
-                        <i class="bi bi-wordpress fs-1 text-primary-accent mb-3 d-block"></i>
-                        <h4 class="h5 text-white">WordPress / Woo</h4>
-                        <p class="text-gray-500 small mb-0">Кастомные темы, ACF Pro, REST API. Превращаю WP в сложный App.</p>
+            <!-- CMS Specific Tabs -->
+            <div class="row justify-content-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-10">
+                    <div class="glass-card p-4 p-md-5">
+                        <h3 class="text-white fw-bold mb-4 text-center">CMS Специализация</h3>
+                        
+                        <!-- Nav Tabs -->
+                        <ul class="nav nav-pills justify-content-center mb-4 gap-3" id="cms-tabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active rounded-pill px-4" id="wp-tab" data-bs-toggle="pill" data-bs-target="#wp-content" type="button" role="tab" aria-selected="true">
+                                    <i class="bi bi-wordpress me-2"></i>WordPress & Woo
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-pill px-4" id="bitrix-tab" data-bs-toggle="pill" data-bs-target="#bitrix-content" type="button" role="tab" aria-selected="false">
+                                    <i class="bi bi-layers-half me-2"></i>1C-Bitrix
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-pill px-4" id="opencart-tab" data-bs-toggle="pill" data-bs-target="#opencart-content" type="button" role="tab" aria-selected="false">
+                                    <i class="bi bi-cart3 me-2"></i>OpenCart / Other
+                                </button>
+                            </li>
+                        </ul>
+
+                        <!-- Tab Content -->
+                        <div class="tab-content" id="cms-tab-content">
+                            <!-- WordPress Content -->
+                            <div class="tab-pane fade show active" id="wp-content" role="tabpanel" aria-labelledby="wp-tab">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-md-5 text-center">
+                                        <i class="bi bi-wordpress display-1 text-primary-accent opacity-50"></i>
+                                        <h4 class="text-white mt-3">Экосистема WP</h4>
+                                        <p class="text-gray-400 small">Мой основной инструмент для 80% задач.</p>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                                            <li class="d-flex align-items-start gap-3">
+                                                <i class="bi bi-check-circle-fill text-primary mt-1"></i>
+                                                <div>
+                                                    <strong class="text-white">Plugin Architecture:</strong> Разработка плагинов под бизнес-логику (Hooks, Actions, Filters). Работа с wpdb.
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-start gap-3">
+                                                <i class="bi bi-check-circle-fill text-primary mt-1"></i>
+                                                <div>
+                                                    <strong class="text-white">WooCommerce Core:</strong> Кастомизация чекаута, интеграция платежных шлюзов, работа с заказами через API.
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-start gap-3">
+                                                <i class="bi bi-check-circle-fill text-primary mt-1"></i>
+                                                <div>
+                                                    <strong class="text-white">Performance:</strong> Оптимизация Query Monitor, настройка Object Cache (Redis), отключение ненужного функционала.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Bitrix Content -->
+                            <div class="tab-pane fade" id="bitrix-content" role="tabpanel" aria-labelledby="bitrix-tab">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-md-5 text-center">
+                                        <i class="bi bi-layers-half display-1 text-danger opacity-50"></i>
+                                        <h4 class="text-white mt-3">1C-Bitrix</h4>
+                                        <p class="text-gray-400 small">Enterprise решения и сложные интеграции.</p>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                                            <li class="d-flex align-items-start gap-3">
+                                                <i class="bi bi-check-circle-fill text-danger mt-1"></i>
+                                                <div>
+                                                    <strong class="text-white">Ядро D7:</strong> Использование современного ORM и API Битрикс вместо старых методов CIBlockElement.
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-start gap-3">
+                                                <i class="bi bi-check-circle-fill text-danger mt-1"></i>
+                                                <div>
+                                                    <strong class="text-white">Компоненты:</strong> Написание собственных компонентов и шаблонов (result_modifier.php, component_epilog.php).
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-start gap-3">
+                                                <i class="bi bi-check-circle-fill text-danger mt-1"></i>
+                                                <div>
+                                                    <strong class="text-white">Интеграции:</strong> Настройка обмена с 1С:Предприятие (товары, заказы, контрагенты). Композитный режим.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- OpenCart Content -->
+                            <div class="tab-pane fade" id="opencart-content" role="tabpanel" aria-labelledby="opencart-tab">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-md-5 text-center">
+                                        <i class="bi bi-cart3 display-1 text-info opacity-50"></i>
+                                        <h4 class="text-white mt-3">OpenCart / MVC</h4>
+                                        <p class="text-gray-400 small">Легковесные магазины со строгой структурой.</p>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                                            <li class="d-flex align-items-start gap-3">
+                                                <i class="bi bi-check-circle-fill text-info mt-1"></i>
+                                                <div>
+                                                    <strong class="text-white">MVC Architecture:</strong> Четкое разделение логики (Controller), данных (Model) и вывода (View/Twig).
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-start gap-3">
+                                                <i class="bi bi-check-circle-fill text-info mt-1"></i>
+                                                <div>
+                                                    <strong class="text-white">Модификаторы:</strong> Работа с OCMOD/VQMOD для изменения ядра без правки исходников.
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-start gap-3">
+                                                <i class="bi bi-check-circle-fill text-info mt-1"></i>
+                                                <div>
+                                                    <strong class="text-white">Migations:</strong> Опыт переноса магазинов с других движков, импорт/экспорт миллионов товаров.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Core Stack Supporting Tech -->
+            <div class="row g-4 mb-5 justify-content-center">
                 <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="200">
                     <div class="glass-card p-4 h-100 text-center hover-lift">
                         <i class="bi bi-filetype-php fs-1 text-warning mb-3 d-block"></i>
-                        <h4 class="h5 text-white">PHP & MySQL</h4>
-                        <p class="text-gray-500 small mb-0">Написание чистых функций, оптимизация SQL запросов, ООП.</p>
+                        <h4 class="h5 text-white">PHP 8+</h4>
+                        <p class="text-gray-500 small mb-0">ООП, Composer, PSR стандарты. Фундамент любой CMS.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="300">
                     <div class="glass-card p-4 h-100 text-center hover-lift">
-                        <i class="bi bi-shop fs-1 text-secondary mb-3 d-block"></i>
-                        <h4 class="h5 text-white">E-Commerce</h4>
-                        <p class="text-gray-500 small mb-0">Bitrix, OpenCart, Shopify. Интеграции оплат и служб доставки.</p>
+                        <i class="bi bi-database fs-1 text-secondary mb-3 d-block"></i>
+                        <h4 class="h5 text-white">MySQL</h4>
+                        <p class="text-gray-500 small mb-0">Сложные JOIN запросы, индексы, оптимизация slow query.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="400">
                     <div class="glass-card p-4 h-100 text-center hover-lift">
                         <i class="bi bi-filetype-js fs-1 text-info mb-3 d-block"></i>
-                        <h4 class="h5 text-white">JS & jQuery</h4>
-                        <p class="text-gray-500 small mb-0">Оживление интерфейсов. AJAX фильтрация товаров без перезагрузки.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Detailed Expertise Breakdowns -->
-            <div class="row g-4 mb-5">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="glass-panel p-4 h-100 rounded-4">
-                        <h4 class="text-white fw-bold mb-4 border-bottom border-secondary pb-2 d-inline-block">Backend & CMS Core</h4>
-                        <ul class="list-unstyled d-flex flex-column gap-3 text-gray-300">
-                            <li class="d-flex align-items-start gap-3">
-                                <i class="bi bi-check-circle-fill text-primary mt-1"></i>
-                                <div>
-                                    <strong class="text-white">Plugin Architecture:</strong> 
-                                    Разработка плагинов под требования бизнеса. Hooks, Actions, Filters.
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-start gap-3">
-                                <i class="bi bi-check-circle-fill text-primary mt-1"></i>
-                                <div>
-                                    <strong class="text-white">Database Optimization:</strong> 
-                                    Нормализация БД, индексы, очистка wp_options. Ускорение тяжелых запросов.
-                                </div>
-                            </li>
-                             <li class="d-flex align-items-start gap-3">
-                                <i class="bi bi-check-circle-fill text-primary mt-1"></i>
-                                <div>
-                                    <strong class="text-white">Security:</strong> 
-                                    Защита от SQL Injection, XSS. Настройка прав доступа, сокрытие админок.
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="glass-panel p-4 h-100 rounded-4">
-                        <h4 class="text-white fw-bold mb-4 border-bottom border-secondary pb-2 d-inline-block">Frontend & Performance</h4>
-                        <ul class="list-unstyled d-flex flex-column gap-3 text-gray-300">
-                            <li class="d-flex align-items-start gap-3">
-                                <i class="bi bi-check-circle-fill text-secondary mt-1"></i>
-                                <div>
-                                    <strong class="text-white">Theme Development:</strong> 
-                                    Верстка тем с нуля. Использование Child Themes. Никаких тяжелых Page Builders.
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-start gap-3">
-                                <i class="bi bi-check-circle-fill text-secondary mt-1"></i>
-                                <div>
-                                    <strong class="text-white">Caching Strategies:</strong> 
-                                    Redis, Memcached, серверное кэширование nginx. Сайт летает даже на шареде.
-                                </div>
-                            </li>
-                             <li class="d-flex align-items-start gap-3">
-                                <i class="bi bi-check-circle-fill text-secondary mt-1"></i>
-                                <div>
-                                    <strong class="text-white">SEO Technical:</strong> 
-                                    Schema.org разметка, Open Graph, Sitemap.xml генерация, ЧПУ (SEF URL).
-                                </div>
-                            </li>
-                        </ul>
+                        <h4 class="h5 text-white">Frontend</h4>
+                        <p class="text-gray-500 small mb-0">JS (ES6+), jQuery (legacy поддержка), SCSS, Bootstrap 5.</p>
                     </div>
                 </div>
             </div>
