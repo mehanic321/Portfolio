@@ -40,6 +40,47 @@ body {
     pointer-events: none;
 }
 
+/* Ambient Edge Glows (Desktop Only) */
+.edge-glow {
+    display: none; /* Default hidden on mobile */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    z-index: -1; /* Behind content */
+    pointer-events: none;
+    filter: blur(80px);
+    opacity: 0.4;
+}
+
+.edge-glow-left {
+    left: -80px;
+    background: linear-gradient(180deg, var(--primary), transparent, var(--primary));
+    animation: glowPulseLeft 6s infinite ease-in-out;
+}
+
+.edge-glow-right {
+    right: -80px;
+    background: linear-gradient(180deg, var(--secondary), transparent, var(--secondary));
+    animation: glowPulseRight 7s infinite ease-in-out;
+}
+
+@keyframes glowPulseLeft {
+    0%, 100% { opacity: 0.3; transform: scaleY(1); }
+    50% { opacity: 0.5; transform: scaleY(1.1); }
+}
+
+@keyframes glowPulseRight {
+    0%, 100% { opacity: 0.3; transform: scaleY(1); }
+    50% { opacity: 0.6; transform: scaleY(1.15); }
+}
+
+@media (min-width: 992px) {
+    .edge-glow {
+        display: block;
+    }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
